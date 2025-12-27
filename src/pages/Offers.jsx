@@ -162,7 +162,7 @@ const Offers = () => {
       }
 
       // Call Railway API
-      const response = await fetch('https://payment-api-production-1e82.up.railway.app/api/initialize', {
+      const response = await fetch('https://genuine-flow-production-b0ae.up.railway.app/api/initialize', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -218,7 +218,7 @@ const Offers = () => {
       attempts++;
       
       try {
-        const response = await fetch(`https://payment-api-production-1e82.up.railway.app/api/status/${reference}`);
+        const response = await fetch(`https://genuine-flow-production-b0ae.up.railway.app/api/status/${reference}`);
         const data = await response.json();
         
         if (data.success) {
@@ -251,7 +251,7 @@ const Offers = () => {
     try {
       setMessage('Verifying OTP...');
       
-      const response = await fetch('https://payment-api-production-1e82.up.railway.app/api/submit-otp', {
+      const response = await fetch('https://genuine-flow-production-b0ae.up.railway.app/api/submit-otp', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
