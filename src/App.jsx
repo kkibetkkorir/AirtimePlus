@@ -31,9 +31,9 @@ function App() {
   const renderPage = () => {
     switch (currentPage) {
       case 'home':
-        return <Home />;
+        return <Home handleNavigation={handleNavigation}/>;
       case 'offers':
-        return <Offers handleNavigation={handleNavigation}/>;
+        return <Offers />;
       case 'support':
         return <Support />;
         case 'terms':
