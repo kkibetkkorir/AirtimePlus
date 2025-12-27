@@ -33,7 +33,7 @@ function App() {
       case 'home':
         return <Home />;
       case 'offers':
-        return <Offers />;
+        return <Offers handleNavigation={handleNavigation}/>;
       case 'support':
         return <Support />;
         case 'terms':
