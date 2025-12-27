@@ -1,14 +1,14 @@
 // pages/Home.jsx
 import React from 'react';
 
-const Home = () => {
+const Home = ({ handleNavigation }) => {
   return (
     <div className="page-content">
       <div className="hero">
         <div className="container">
           <h1>Instant Airtime Top-Up, Anytime, Anywhere</h1>
           <p>Buy airtime for all networks at competitive rates and enjoy instant delivery directly to your phone</p>
-          <a href="#" className="btn btn-primary">Get Started Now</a>
+          <a href="#" onClick={() => handleNavigation('offers')} className="btn btn-primary">Get Started Now</a>
         </div>
       </div>
 
